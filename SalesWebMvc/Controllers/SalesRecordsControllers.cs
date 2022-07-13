@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using SalesWebMvc.Services;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using SalesWebMvc.Services;
 
 namespace SalesWebMvc.Controllers
 {
@@ -13,6 +15,7 @@ namespace SalesWebMvc.Controllers
         {
             _salesRecordService = salesRecordService;
         }
+
         public IActionResult Index()
         {
             return View();
